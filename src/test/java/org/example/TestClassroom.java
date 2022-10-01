@@ -16,30 +16,30 @@ public class TestClassroom {
     @Test
     @DisplayName("Name should be set")
     void testSetName() {
-        assertEquals("Murad", classroom.setName("Murad"), "Name set should work for any name");
+        assertEquals("Jahid", classroom.setName("Jahid"), "Name field should work");
     }
 
     @Test
     @DisplayName("Age should be set")
     void testSetAge() {
-        assertEquals(15, classroom.setAge(15), "Age set should work for any age");
+        assertEquals(20, classroom.setAge(20), "Age set should work");
     }
 
     @Test
     @DisplayName("Address should be set")
     void testSetAddress() {
-        assertEquals("Ataturk avenue 151", classroom.setAddress("Ataturk avenue 151"), "Address set should work for any address");
+        assertEquals("Baku", classroom.setAddress("Baku"), "Address field should work");
     }
 
     @Test
     @DisplayName("Email should be set")
     void testSetEmail() {
-        assertEquals("dummy@gmail.com", classroom.setEmail("dummy@gmail.com"), "Email set should work for any Email");
+        assertEquals("cako@gmail.com", classroom.setEmail("cako@gmail.com"), "Email field should");
     }
 
     @Test
     @DisplayName("Classroom type should be set")
     void testSetClassroomType() {
-        assertEquals(classroomType.MORNING, classroom.setClassoomType(classroomType.MORNING), "Clasroom type should be set for one of the two given types");
+        assertEquals(classroomType.EVENING, classroom.setClassoomType(classroomType.EVENING), "Classroom type should include evening or morning");
     }
 }
